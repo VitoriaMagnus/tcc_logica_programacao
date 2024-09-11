@@ -1,24 +1,11 @@
+import 'dart:io';
+
 void main() {
-  String endereco;
-  String bairro;
-  int numero;
-  String cidade;
-  String estado;
-  int telefone;
+  print("Informe seu nome. ");
+  var nome = stdin.readLineSync();
 
-  endereco = "Av castelo branco";
-  numero = 1589;
-  bairro = "centro";
-  cidade = "Curitiba";
-  estado = "Paraná";
-  telefone = 41996857412;
-
+  print("-----------------------");
+  print("Prezado(a), $nome. Seja muito bem-vindo(a) à nossa loja.");
   print(
-      'Sejam bem-vindos a loja Cuidapet! Em breve teremos um sistema de autoatendimento.');
-
-  print("--------------------------------");
-
-  print("Nosso enredeço - $endereco $numero, $bairro, $cidade - $estado ");
-
-  print("Telefone para contato - $telefone");
+      "\nOferecemos em nossa loja produtos e serviços para seu PET. Para venda de produtos, procure o colaborador Junior e, para serviços como banho ou tosa, procure o colaborador Neto. Obrigado e esperamos que tenha uma ótima experiência em nossa loja.");
 }
