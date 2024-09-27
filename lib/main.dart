@@ -16,6 +16,8 @@ void main() {
   print("2 - Ver ofertas de Serviços. ");
   print("3 - Ver ofertas de roupas.");
   print("4 - Ver novos serviços.");
+  print("5 - Promoção I 10% de desconto");
+  print("6 - Promoção II 20% de desconto");
 
   var menuLeitura = stdin.readLineSync() as String;
 
@@ -30,6 +32,12 @@ void main() {
   } else if (menu == 4) {
     print(
         "Novos serviços oferecidos: \nHidratação de pelo R\$39,99  \nTosa higienica por R\$10,99 \nTingimento dos pelo por R\$55,99");
+  } else if (menu == 5) {
+    print(
+        "Compre um saco de 15kg de ração R\$345,99 e ganhe 10% de desconto no banho.");
+  } else if (menu == 6) {
+    print(
+        "Compre 1 banho com tosa higienica e hidratação e ganhe 20% de desconto no valor total.");
   } else {
     print("Opção inválida, escolha entre as opções do menu.");
   }
