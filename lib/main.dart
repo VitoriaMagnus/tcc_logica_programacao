@@ -15,28 +15,31 @@ void main() {
         print(
             'O cliente comprou Ração Royal Canin Indor 7,5kg? Digite S ou N.');
         var respostaUm = stdin.readLineSync();
-        if (respostaUm == 's') {
+        if (respostaUm == 's' || respostaUm == 'S') {
           var precoUm = 280;
           precoTotal = precoTotal + precoUm;
         }
 
         print('O cliente solicitou banho e tosa? Digite S ou N.');
         var respostaDois = stdin.readLineSync();
-        if (respostaDois == 's') {
+        if (respostaDois == 's' || respostaDois == 'S') {
           var precoDois = 54;
           precoTotal = precoTotal + precoDois;
         }
 
         print('O cliente solicitou tosa higienica? Digite S ou N.');
         var respostaTres = stdin.readLineSync();
-        if (respostaTres == 's') {
+        if (respostaTres == 's' || respostaTres == 'S') {
           var precoTres = 10;
           precoTotal = precoTotal + precoTres;
         }
 
         print('O cliente solicitou hidratação? Digite S ou N.');
         var respostaQuatro = stdin.readLineSync();
-        var precoQuatro = 39;
+        if (respostaQuatro == 's' || respostaQuatro == 'S') {
+          var precoQuatro = 39;
+          precoTotal = precoTotal + precoQuatro;
+        }
 
         if (respostaDois == 's' ||
             respostaDois == 'S' && respostaTres == 's' ||
